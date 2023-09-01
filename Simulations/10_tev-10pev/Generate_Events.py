@@ -78,6 +78,7 @@ tray.Add(PropagateMuons, 'ParticlePropagators',
          OutputMCTreeName="I3MCTree_postprop",
          PROPOSAL_config_file=os.getenv('PONESRCDIR')+"/configs/PROPOSAL_config.json")
 
+#Get rid of events that does not have at least 10TeV energy at the point of closest approach of the detector.
 tray.AddModule(MuonEnergy,'MuonEnergy')
 
 event_id = 1
