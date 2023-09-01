@@ -9,7 +9,7 @@ import os
 from os.path import expandvars
 import numpy as np
 import argparse
-from Utilities.MuonEnergy import MuonEnergy
+from Tools.MuonEnergy import MuonEnergy
 
 parser = argparse.ArgumentParser(description = "A scripts to run the neutrino generation simulation step using Lepton Injector")
 
